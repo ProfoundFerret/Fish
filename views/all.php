@@ -25,6 +25,8 @@
 	</div>		
 
 	<div id="content">{{ Fish::next() }}</div>
+
+	<div id="footer">{{ kORGANIZATION }} {{ date('Y') }}</div>
 </div>
 </body>
 </html>
