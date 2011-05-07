@@ -22,6 +22,11 @@ $matches = FArray::turn($matches);
 foreach ($matches as $i => $values)
 {
 	$name = $values[1];
+	if (strpos($name,'master:') === 0)
+	{
+		unset($matches[$i]);
+		continue;
+	}
 	$email = $values[3];
 	$timestamp = $values[4];
 	$change = $values[6];
