@@ -1,0 +1,3 @@
+<?
+require 'fish/std.php';
+?>
