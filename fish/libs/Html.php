@@ -249,6 +249,8 @@ class HTML
 
 	static function link($url, $name = false, $attrs = array(), $confirmMessage = "")
 	{
+		if (substr($url,0,7) != "http://") $url = kSHORT_PREFIX . $url;
+
 		if (is_string($attrs))
 		{
 			$attrs = array('title' => $attrs);
@@ -293,6 +295,7 @@ class HTML
 
 	static function css($file, $media = 'screen')
 	{
+		if (substr($file,0,7) != "http://") $file = kSHORT_PREFIX . $file;
 		$attrs = array();
 		$attrs['href'] = $file;
 		$attrs['type'] = 'text/css';
@@ -304,6 +307,8 @@ class HTML
 
 	static function js($file)
 	{
+		if (substr($file,0,7) != "http://") $file = kSHORT_PREFIX . $file;
+
 		$attrs = array();
 		$attrs['src'] = $file;
 		if (self::$xhtml)
