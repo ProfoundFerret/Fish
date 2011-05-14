@@ -68,6 +68,7 @@ class TemplateEngine
 		$contents = preg_replace($search, $replace, $contents);
 
 		$contents = self::createFunction('createArray',__CLASS__ . '::createArray',$contents);
+		$contents = self::createFunction('swap',__CLASS__ . '::swap',$contents);
 
 		return $contents;
 	}
@@ -123,6 +124,22 @@ class TemplateEngine
 
 		$return = 'array(' . implode(', ',$return) . ')';
 		return $return;
+	}
+
+	static function swap($vars)
+	{
+		$return = 'list(';
+
+		$return .= implode (',', $vars);
+
+		$return .= ') = array(';
+
+		$return .= implode (',', array_reverse($vars));
+
+		$return .= ')';
+
+		return $return;
+		 
 	}
 
 	static function convertVariable($dotNotation)
