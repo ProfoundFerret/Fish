@@ -80,13 +80,15 @@ a
 
 	box-shadow: 0 0 4px rgba(0, 0, 0, .5);
 	opacity: .5;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	
 	color: white;
 	padding: 8px 20px;
 	border-radius: .2em;
 
 	background: #333333;
 	background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(black));
-	background: -moz-linear-gradient(top,  #6097B1,  #205771);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#6097B1', endColorstr='#205771');
-
+	background: -moz-linear-gradient(top,  #333333,  black);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='black');
 }
