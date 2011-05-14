@@ -2,3 +2,4 @@
 *.swo
 *.swp
 fish/cache/*
+tags
