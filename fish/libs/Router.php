@@ -98,7 +98,6 @@ Class Router
 		$file = array_shift(self::$includes);
 		if ($file)
 		{
-				echo "INC $file\n";
 			if (file_exists($file))
 			{
 				self::$count++;
