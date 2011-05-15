@@ -108,7 +108,7 @@ class HTML
 		self::input('submit', $name, $value, false, $attrs);
 	}
 
-	static function password($name, $default = false, $attrs = array())
+	static function password($name = 'password', $default = false, $attrs = array())
 	{
 		self::input('password', $name, $default, false, $attrs);
 	}
