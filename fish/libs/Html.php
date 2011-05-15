@@ -110,7 +110,7 @@ class HTML
 
 	static function password($name = 'password', $default = false, $attrs = array())
 	{
-		self::input('password', $name, $default, false, $attrs);
+		self::inputForced('password', $name, $default, false, $attrs);
 	}
 
 	static function text($name, $default = false, $attrs = array())
