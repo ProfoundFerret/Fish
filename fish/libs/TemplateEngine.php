@@ -165,4 +165,10 @@ class TemplateEngine
 		return $variable;
 	}
 }
+
+function inc($file)
+{
+	TemplateEngine::loadFile($file);
+}
+
 ?>
