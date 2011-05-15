@@ -7,7 +7,7 @@ class TemplateEngine
 	{
 		if (! CacheControl::cacheUpToDate($file)) self::updateCacheFile($file);
 
-		include CacheControl::fileLocation($file);
+		include_once CacheControl::fileLocation($file);
 	}
 
 	private static function updateCacheFile($file)
