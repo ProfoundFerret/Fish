@@ -32,8 +32,6 @@ Class Router
 			}
 		}
 
-		if (! isSet($routes[0])) $routes[0] = 'home';
-
 		self::$routes = $routes;
 
 		self::updateGlobalVariable();
@@ -48,7 +46,12 @@ Class Router
 	{
 		if (! self::routes()) self::determineRoute();
 
-		$r0 = self::$routes[0];
+		if (count(self::$routes))
+		{
+			$r0 = self::$routes[0];
+		} else {
+			$r0 = false;
+		}
 
 		if ($r0 == "css" || $r0 == "js" || $r0 == "images")
 		{
@@ -66,19 +69,21 @@ Class Router
 			return;
 		}
 
-		$folders = array('controllers','views');
+		$folders = array('controllers/','views/');
 
+		$includes = array();
 		foreach ($folders as $folder)
-		{	
+		{
+			$includes[] = $folder . 'all.php';
 			foreach (self::routes() as $include)
 			{
-				$file = $folder . '/all.php';
-				self::$includes[] = $file;
-				$folder .=  '/' . $include;
+				$includes[] = $folder . $include . '.php';
+				$folder .= $include .'/';
 			}
-			$file = $folder . '.php';
-			self::$includes[] = $file;
+			$includes[] = $folder . 'home.php';
 		}
+
+		self::$includes = $includes;
 	}
 
 	static function skipNextInclude()
@@ -93,6 +98,7 @@ Class Router
 		$file = array_shift(self::$includes);
 		if ($file)
 		{
+				echo "INC $file\n";
 			if (file_exists($file))
 			{
 				self::$count++;
@@ -108,22 +114,27 @@ Class Router
 	private static function loadBackupFile($file)
 	{
 		$pieces = explode('/', $file);
-		if (end($pieces) == 'all.php')
+
+		if (end($pieces) == "all.php")
 		{
 			self::includeNextFile();
 			return;
 		}
+
+		array_pop($pieces);
 		array_pop($pieces);
 
-		$lastKey = FArray::lastKey($pieces);
+		if (count($pieces) <= 1)
+		{
+			self::includeNextFile();
+			return;
+		}
 
-		if (! isSet($pieces[$lastKey])) return;
+		array_push($pieces, 'home.php');
 
-		$pieces[$lastKey] .= '.php';
+		$newFile= implode('/', $pieces);
 
-		$file = implode('/',$pieces);
-
-		self::$includes[] = $file;
+		array_unshift(self::$includes,$newFile);
 		self::includeNextFile();
 	}
 
