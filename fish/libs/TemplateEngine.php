@@ -31,7 +31,7 @@ class TemplateEngine
 	{
 
 		$kVARIABLE = '(\$[a-zA-Z_][a-zA-Z0-9_]*(\[[\'"]?[a-zA-Z0-9]+[\'"]?\])*)';
-		$kDOT_NOTATION_VARIABLE = '\$[a-zA-Z_][a-zA-Z0-9-_]+(\.[a-zA-Z0-9]+)+';
+		$kDOT_NOTATION_VARIABLE = '\$[a-zA-Z_][a-zA-Z0-9-_]+(\.[a-zA-Z0-9_]+)+';
 		$kSOMETHING = '([^}]+)';
 		$kNUMBER = '(-?[0-9]*(\.[0-9]+)?)';
 		$kNAME = '([a-zA-Z_][a-zA-Z0-9_]*)';
