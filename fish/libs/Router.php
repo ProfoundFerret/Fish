@@ -2,7 +2,7 @@
 Class Router
 {
 	private static $routes = false;
-	private static $includes = array();
+	private static $includes = false;
 	private static $count = 0;
 	private static $extension = 'html';
 
@@ -32,6 +32,7 @@ Class Router
 			}
 		}
 
+		if (! count($routes)) $routes[0] = 'home';
 		self::$routes = $routes;
 
 		self::updateGlobalVariable();
@@ -93,20 +94,21 @@ Class Router
 
 	static function includeNextFile()
 	{
-		if (! self::routes()) self::routeUser();
+		if (self::$includes === false) self::routeUser();
 
 		$file = array_shift(self::$includes);
-		if ($file)
+
+		if (! $file) return;
+
+		if (file_exists($file))
 		{
-			if (file_exists($file))
-			{
-				self::$count++;
-				$count = self::$count;
-				TemplateEngine::loadFile($file);
-				if ($count == self::$count) self::includeNextFile();
-			} else {
-				self::loadBackupFile($file);
-			}
+			self::$count++;
+			$count = self::$count;
+			TemplateEngine::loadFile($file);
+
+			if ($count == self::$count) self::includeNextFile();
+		} else {
+			self::loadBackupFile($file);
 		}
 	}
 
@@ -123,7 +125,7 @@ Class Router
 		array_pop($pieces);
 		array_pop($pieces);
 
-		if (count($pieces) <= 1)
+		if (count($pieces) < 1)
 		{
 			self::includeNextFile();
 			return;
