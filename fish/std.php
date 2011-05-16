@@ -1,8 +1,5 @@
 <?
 ob_start();
-session_start();
-
-if (! isSet($_SESSION['fish'])) $_SESSION['fish'] = array();
 
 include 'fish/config.php';
 include 'fish/libs/util.php';
