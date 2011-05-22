@@ -75,7 +75,7 @@ a
 {
 	text-shadow: black 0 0 1px;
 
-	position: absolute;
+	position: fixed;
 	bottom: 10px;
 
 	box-shadow: 0 0 4px rgba(0, 0, 0, .5);
