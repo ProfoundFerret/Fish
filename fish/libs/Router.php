@@ -142,7 +142,18 @@ Class Router
 	static private function updateGlobalVariable()
 	{
 		global $_ROUTES;
-		$_ROUTES = self::routes();
+		$routes = self::routes();
+		$newRoutes = $routes;
+		foreach ($routes as $i => $route)
+		{
+			if (isSet($routes[$i + 1]))
+			{
+				if (is_numeric($route)) continue;
+				$newRoutes[$route] = $routes[$i + 1];
+			}
+		}
+
+		$_ROUTES = $newRoutes;
 	}
 }
 ?>
