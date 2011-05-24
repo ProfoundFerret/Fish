@@ -1,12 +1,14 @@
 <html>
 <head>
 	<title>{{ $title }}</title>
-	{{ HTML::js('js/jquery') }}
-	{{ HTML::js('js/std') }}
-	{{ HTML::css('css/reset') }}
-	{{ HTML::css('css/std') }}
-	{{ HTML::css('http://fonts.googleapis.com/css?family=Ubuntu') }}
-	{{ HTML::css('http://fonts.googleapis.com/css?family=Droid+Sans') }}
+
+	{{ for $file in $JS }}
+		{{ HTML::js($file) }}
+	{{ end }}
+	{{ for $file in $CSS }}
+		{{ HTML::css($file) }}
+	{{ end }}
+
 </head>
 <body>
 <div id="container">
