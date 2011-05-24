@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title>{{ $title }}</title>
-	{{ HTML::js('js/jquery') }}
+	{{ HTML::js('js/jquery-1.6.min.js') }}
 	{{ HTML::js('js/std') }}
 	{{ HTML::css('css/reset') }}
 	{{ HTML::css('css/std') }}
