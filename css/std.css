@@ -189,37 +189,21 @@ table.gallery
 
 #bigImage
 {
-	margin: auto;
-	max-width: 75%;
+	max-width: 100%;
 	border-radius: .5em;
-	border: 3px solid white;
-	box-shadow: 0 0 4px rgba(255, 255, 255, .5);
+	box-shadow: 0 0 8px rgba(0, 0, 0, .5);
 }
 
 #bigImageHolder
 {
 	text-align: center;
 	padding: 12px;
-	background-color: #333;
-	border-radius: .5em;
+	max-width: 75%;
+	margin: auto;
 }
 
-#nextImage, #previousImage
+#bigImageTitle
 {
-	font-size: 96px;
-	color: white;
-}
-
-#nextImage
-{
-	position: absolute;
-	right: 9%;
-	top: 20%;
-}
-
-#previousImage
-{
-	position: absolute;
-	left: 9%;
-	top: 0;
+	font-size: 22px;
+	padding: 6px;
 }
