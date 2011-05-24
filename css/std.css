@@ -26,6 +26,7 @@
 #title, h1, h2, h3
 {
 	font-family: 'Ubuntu', arial, serif;
+	font-weight: bold;
 }
 
 #title a
@@ -49,6 +50,21 @@ a
 {
 	color: #6097B1;
 	text-decoration: none;
+}
+
+h1,h2,h3
+{
+	text-align: center;
+}
+
+h1
+{
+
+}
+
+h2
+{
+	font-size: 24px;
 }
 
 .boxshadow
@@ -192,8 +208,24 @@ table.gallery
 #bigImage
 {
 	max-width: 100%;
+	max-height: 400px;
+
 	border-radius: .5em;
+
+	border: 1px solid rgba(0,0,0,0);
+
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+
 	box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+}
+
+#bigImage:hover {
+	border-color: #FFD000;
+    box-shadow: 0 0 20px #FFD000;
+    -webkit-box-shadow: 0 0 20px #FFD000;
+    -moz-box-shadow: 0 0 20px #FFD000;
 }
 
 #bigImageHolder
@@ -209,3 +241,53 @@ table.gallery
 	font-size: 22px;
 	padding: 6px;
 }
+
+.adminLink
+{
+	padding-right: 8px;
+}
+
+.adminImage img, .adminImage div.file
+{
+	width: 200px;
+	margin-right: 32px;
+	float: left;
+}
+
+.adminImage img
+{
+	border: 1px solid darkGray;
+    box-shadow: 0 0 6px darkGray;
+}
+
+.adminImage textarea
+{
+	padding: 18px;
+	font-size: 20px;
+	width: 725px;
+	min-height: 111px;
+}
+
+.adminImage
+{
+	clear: both;
+	padding-top: 4px;
+}
+
+img, input[type="text"], input[type="password"], textarea
+{
+	border: 1px solid darkGray;
+    box-shadow: 0 0 6px darkGray;
+    -webkit-box-shadow: 0 0 6px darkGray;
+    -moz-box-shadow: 0 0 6px darkGray;
+}
+
+.deleteImage
+{
+	visibility: hidden;
+	width: 186px;
+	font-size: 22px;
+	text-align: center;
+	padding: 8px;
+}
+
