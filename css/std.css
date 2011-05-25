@@ -4,7 +4,12 @@
 	background: -webkit-gradient(linear, left top, left bottom, from(#FFB518), to(#CF9500));
 	background: -moz-linear-gradient(top,  #FFB518,  #CF9500);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFB518', endColorstr='#CF9500');
+}
 
+a
+{
+	color: #6097B1;
+	text-decoration: none;
 }
 
 .calendar
@@ -170,4 +175,3 @@ img, input[type="text"], input[type="password"], textarea
 	text-align: center;
 	padding: 8px;
 }
-

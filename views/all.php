@@ -23,7 +23,7 @@
 				<br>
 			{{ end }}
 		</div>
-	</div>		
+	</div>
 	<div class="clear"></div>
 
 	<div id="content">{{ Fish::next() }}</div>
