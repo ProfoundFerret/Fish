@@ -23,6 +23,25 @@
 	color: white;
 }
 
+#nav a
+{
+	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+
+	color: white;
+
+	font-weight: bold;
+}
+
+#nav a:hover
+{
+	background-color: rgba(255, 255, 255, .1);
+	border-radius: .5em;
+
+	box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+}
+
 #title, h1, h2, h3
 {
 	font-family: 'Ubuntu', arial, serif;
@@ -37,7 +56,6 @@
 
 #title
 {
-	display: inline;
 	padding-right: 20px;
 }
 
@@ -48,7 +66,7 @@ html
 
 a
 {
-	color: #6097B1;
+	color: #FF9600;
 	text-decoration: none;
 }
 
@@ -76,17 +94,21 @@ h2
 {
 	border-radius: .3em;
 }
-
 #nav, #nav ul
 {
 	font-size: 1em;
 	display: inline-block;
 }
 
+#nav a
+{
+	padding: 4px 16px;
+}
+
 #nav li
 {
-	padding-right: 8px;
 	display: inline-block;
+	padding: 4px 2px;
 }
 
 #footer
@@ -170,11 +192,6 @@ h1
 	background-color: #eeeeff;
 }
 
-.calendar .today .calendarDay
-{
-	font-weight: bold;
-}
-
 .calendar thead td:first-child
 {
 	border-top-left-radius: .5em;
@@ -197,12 +214,14 @@ table.gallery
 	max-width: 100%;
 	max-height: 100%;
 	border-radius: .5em;
+	margin: 8px;
 	box-shadow: 0 0 4px rgba(0, 0, 0, .5);
 }
 
 .gallery tr, .gallery td
 {
 	height: 200px;
+	text-align: center;
 }
 
 #bigImage
@@ -291,3 +310,7 @@ img, input[type="text"], input[type="password"], textarea
 	padding: 8px;
 }
 
+.clear
+{
+	clear: both;
+}

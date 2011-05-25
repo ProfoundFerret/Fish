@@ -19,4 +19,6 @@ $nav[0]['attractions'] = 'Nearby Attractions';
 $nav[0]['travel'] = 'Travel';
 $nav[0]['contact'] = 'Contact Us';
 
+Util::loadLibrary('Text');
+
 ?>
