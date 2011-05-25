@@ -1,0 +1,154 @@
+#container
+{
+	width: 960px;
+	margin: 5px auto;
+}
+
+#menu
+{
+	color: white;
+	padding: 8px 24px;
+	margin: 10px 0;
+	box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+
+	background: #6097B1;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6097B1), to(#205771));
+	background: -moz-linear-gradient(top,  #6097B1,  #205771);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#6097B1', endColorstr='#205771');
+}
+
+#menu a
+{
+	color: white;
+}
+
+#title, h1, h2, h3
+{
+	font-family: 'Ubuntu', arial, serif;
+}
+
+#title a
+{
+	font-size: 3em;
+}
+
+#title
+{
+	padding-right: 20px;
+	text-shadow: black 0 0 1px;
+}
+
+html
+{
+	font-family: 'Droid Sans', arial, serif;
+}
+
+a
+{
+	color: #6097B1;
+	text-decoration: none;
+}
+
+.boxshadow, #menu
+{
+	box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+}
+
+.borderRadius, #menu
+{
+	border-radius: .3em;
+}
+
+#nav, #nav ul
+{
+	font-size: 1em;
+	display: inline-block;
+}
+
+#nav li
+{
+	padding-right: 8px;
+	display: inline-block;
+}
+
+#nav a
+{
+	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+
+	color: white;
+
+	font-weight: bold;
+}
+
+#nav
+{
+	padding: 8px;
+	margin-top: 8px;
+
+	border-radius: .2em;
+
+	background: #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#111));
+	background: -moz-linear-gradient(top,  #333,  #111);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#333', endColorstr='#111');
+
+	float: left;
+
+	position: relative;
+	bottom: 8px;
+
+	box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+}
+
+#nav a:hover
+{
+	background-color: rgba(255, 255, 255, .1);
+	border-radius: .5em;
+
+	box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+}
+
+#footer
+{
+	text-shadow: black 0 0 1px;
+
+	position: fixed;
+	bottom: 10px;
+
+	box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+
+	opacity: .7;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70);
+	
+	color: white;
+	padding: 8px 20px;
+	border-radius: .2em;
+
+	border: 1px solid black;
+
+	background: #333333;
+	background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(black));
+	background: -moz-linear-gradient(top,  #333333,  black);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='black');
+}
+
+.clear
+{
+	clear: both;
+}
+
+thead
+{
+	text-align: center;
+	font-size: 20px;
+}
+
+
+tbody
+{
+	text-align: left;
+}
+
