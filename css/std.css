@@ -5,3 +5,10 @@
 	background: -moz-linear-gradient(top,  #6097B1,  #205771);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#6097B1', endColorstr='#205771');
 }
+
+a
+{
+	color: #6097B1;
+	text-decoration: none;
+}
+

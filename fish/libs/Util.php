@@ -86,6 +86,15 @@ class Util
 	}
 }
 
+function array_uncreate($array)
+{
+	foreach ($array as $var => $val)
+	{
+		global $$var;
+		$$var = $val;
+	}
+}
+
 class FArray
 {
 	static function lastKey(& $array)
