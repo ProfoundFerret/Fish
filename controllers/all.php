@@ -11,6 +11,7 @@ $CSS = array();
 $CSS[] = 'css/reset';
 $CSS[] = 'css/http://fonts.googleapis.com/css?family=Ubuntu';
 $CSS[] = 'css/http://fonts.googleapis.com/css?family=Droid+Sans';
+$CSS[] = 'css/fish';
 $CSS[] = 'css/std';
 
 $nav[0]['home'] = 'Home';

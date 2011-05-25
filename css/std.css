@@ -1,150 +1,8 @@
-#container
-{
-	width: 960px;
-	margin: 5px auto;
-}
-
-#menu
-{
-	color: white;
-	padding: 8px 24px;
-	margin: 10px 0;
-	border: 1px solid #CF9500;
-
-	background: #FFB518;
-	background: -webkit-gradient(linear, left top, left bottom, from(#FFB518), to(#CF9500));
-	background: -moz-linear-gradient(top,  #FFB518,  #CF9500);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFB518', endColorstr='#CF9500');
-	box-shadow: 0 0 6px rgba(0, 0, 0, .5);
-}
-
-#menu a
-{
-	color: white;
-}
-
-#nav a
-{
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-
-	color: white;
-
-	font-weight: bold;
-}
-
-#nav a:hover
-{
-	background-color: rgba(255, 255, 255, .1);
-	border-radius: .5em;
-
-	box-shadow: 0 0 4px rgba(0, 0, 0, .5);
-}
-
-#title, h1, h2, h3
-{
-	font-family: 'Ubuntu', arial, serif;
-	font-weight: bold;
-}
-
-#title a
-{
-	font-size: 3em;
-	text-shadow: #9F5500 0 0 5px;
-}
-
-#title
-{
-	padding-right: 20px;
-}
-
-html
-{
-	font-family: 'Droid Sans', arial, serif;
-}
-
-a
-{
-	color: #FF9600;
-	text-decoration: none;
-}
-
-h1,h2,h3
-{
-	text-align: center;
-}
-
-h1
-{
-
-}
-
-h2
-{
-	font-size: 24px;
-}
-
-.boxshadow
-{
-	box-shadow: 0 0 4px rgba(0, 0, 0, .5);
-}
-
-.borderRadius, #menu
-{
-	border-radius: .3em;
-}
-#nav, #nav ul
-{
-	font-size: 1em;
-	display: inline-block;
-}
-
-#nav a
-{
-	padding: 4px 16px;
-}
-
-#nav li
-{
-	display: inline-block;
-	padding: 4px 2px;
-}
-
-#footer
-{
-	text-shadow: black 0 0 1px;
-
-	position: fixed;
-	bottom: 10px;
-
-	box-shadow: 0 0 4px rgba(0, 0, 0, .5);
-	opacity: .5;
-	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-	filter: alpha(opacity=50);
-	
-	color: white;
-	padding: 8px 20px;
-	border-radius: .2em;
-
-	border: 1px solid black;
-
-	background: #333333;
-	background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(black));
-	background: -moz-linear-gradient(top,  #333333,  black);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='black');
-}
-
 .calendar
 {
 	width: 100%;
 }
 
-thead
-{
-	text-align: center;
-	font-size: 20px;
-}
 
 .calendar thead td
 {
@@ -154,12 +12,6 @@ thead
 	border: 1px solid #333;
 
 }
-
-tbody
-{
-	text-align: left;
-}
-
 .calendar tbody td
 {
 	height: 200px;
@@ -310,7 +162,3 @@ img, input[type="text"], input[type="password"], textarea
 	padding: 8px;
 }
 
-.clear
-{
-	clear: both;
-}
