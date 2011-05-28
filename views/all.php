@@ -28,7 +28,7 @@
 
 	<div id="content">{{ Fish::next() }}</div>
 
-	<a href="{{ kSHORT_PREFIX }}admin"><div id="footer">{{ kORGANIZATION }} {{ date('Y') }}</div></a>
+	<a href="{{ kSHORT_PREFIX }}admin{{ $adminDirection }}"><div id="footer">{{ kORGANIZATION }} {{ date('Y') }}</div></a>
 </div>
 </body>
 </html>

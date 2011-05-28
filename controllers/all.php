@@ -15,11 +15,14 @@ $CSS[] = 'css/fish';
 $CSS[] = 'css/std';
 
 $nav[0]['home'] = 'Home';
+$nav[0]['http://italianadventuresofdiannandsusie.blogspot.com/2010_07_01_archive.html'] = 'Blog';
 $nav[0]['gallery'] = 'Gallery';
 $nav[0]['attractions'] = 'Nearby Attractions';
 $nav[0]['travel'] = 'Travel';
 $nav[0]['contact'] = 'Contact Us';
 
 Util::loadLibrary('Text');
+
+$adminDirection = '/' . $_ROUTES[0];
 
 ?>
