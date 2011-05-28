@@ -3,6 +3,7 @@ $title = kSITE_NAME;
 
 $JS = array();
 $JS[] = 'js/jquery';
+$JS[] = 'js/fish';
 $JS[] = 'js/std';
 
 $CSS = array();
