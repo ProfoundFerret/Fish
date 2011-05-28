@@ -5,6 +5,7 @@ $db = new MySQLi('localhost', 'root', '', 'ltd');
 
 $JS = array();
 $JS[] = 'js/jquery';
+$JS[] = 'js/fish';
 $JS[] = 'js/std';
 
 $CSS = array();
