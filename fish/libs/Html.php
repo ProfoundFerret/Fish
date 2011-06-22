@@ -336,6 +336,8 @@ class HTML
 	static function day($name, $default = false, $attrs = array())
 	{
 		if ($default === false) $default = date('d');
+		
+		Util::alert($default);
 
 		self::selectRange($name, 1, 31, $default, $attrs);
 	}
