@@ -339,7 +339,7 @@ class HTML
 		
 		Util::alert($default);
 
-		self::selectRange($name, 1, 31, $default, $attrs);
+		self::selectRange($name, 1, 31, true, $default, $attrs);
 	}
 
 	static function year($name, $default = false, $attrs = array())
