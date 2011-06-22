@@ -189,7 +189,7 @@ class HTML
 				
 				echo $value;
 
-				if ($val == $value)
+				if ($val == $key)
 				{
 					$attrs['selected'] = true;
 				}
