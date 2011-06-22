@@ -186,14 +186,12 @@ class HTML
 			{
 				$attrs = array();
 				$attrs['value'] = $key;
-				
-				echo $value;
 
 				if ($val == $key)
 				{
 					$attrs['selected'] = true;
 				}
-
+				
 				self::open('option',$attrs);
 				echo $val;
 				self::close('option');
