@@ -84,6 +84,11 @@ class Util
 		$ext = strtolower($ext);
 		return $ext;
 	}
+	
+	static function alert($text)
+	{
+		echo '<script type="text/javascript">alert("$text");</script>';
+	}
 }
 
 function array_uncreate($array)
