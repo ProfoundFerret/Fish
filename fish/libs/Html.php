@@ -187,7 +187,7 @@ class HTML
 				$attrs = array();
 				$attrs['value'] = $key;
 
-				if ($val == $key)
+				if ($value == $key)
 				{
 					$attrs['selected'] = true;
 				}
