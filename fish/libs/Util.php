@@ -87,7 +87,7 @@ class Util
 	
 	static function alert($text)
 	{
-		echo '<script type="text/javascript">alert("$text");</script>';
+		echo '<script type="text/javascript">alert("' . $text . '");</script>';
 	}
 }
 
