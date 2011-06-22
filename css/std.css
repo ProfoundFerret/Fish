@@ -38,6 +38,8 @@ a
     padding: 8px 0;
 
     font-size: 16px;
+    
+    border-radius: 3px;
 }
 
 .calendarBadge.green
@@ -85,6 +87,7 @@ a
 .calendar td
 {
 	border: 1px solid #777;
+	vertical-align: top;
 }
 
 h1
@@ -149,7 +152,7 @@ table.gallery
 
 #bigImage
 {
-	max-width: 600px;
+    max-width: 600px;
 	max-height: 400px;
 
 	border-radius: .5em;
@@ -163,8 +166,6 @@ table.gallery
 {
 	text-align: center;
 	padding: 12px;
-	max-width: 75%;
-	margin: auto;
 }
 
 #bigImageTitle
@@ -180,7 +181,7 @@ table.gallery
 
 .adminImage img, .adminImage div.file
 {
-	width: 200px;
+	width: 180px;
 	margin-right: 32px;
 	float: left;
 }
@@ -193,8 +194,6 @@ table.gallery
 
 .adminImage textarea
 {
-	padding: 18px;
-	font-size: 20px;
 	width: 725px;
 	min-height: 111px;
 }
@@ -202,7 +201,18 @@ table.gallery
 .adminImage
 {
 	clear: both;
-	padding-top: 4px;
+	padding: 8px;
+	border: 1px solid white;
+	
+	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+}
+
+.adminImage.existing:hover
+{
+	background: #F7F7F7;
+	border: 1px solid #DDD;
 }
 
 img, input[type="text"], input[type="password"], textarea
@@ -213,18 +223,29 @@ img, input[type="text"], input[type="password"], textarea
     -moz-box-shadow: 0 0 6px darkGray;
 }
 
+input[type="text"], input[type="password"], textarea
+{
+    padding: 18px;
+	font-size: 20px;
+
+}
+
 .deleteImage
 {
 	visibility: hidden;
-	width: 186px;
-	font-size: 22px;
 	text-align: center;
-	padding: 8px;
+	padding: 0 0 8px 0;
 }
 
 a.disabled
 {
     color: gray;
+}
+
+.attractionImage
+{
+    max-width: 300px;
+    max-height: 400px;
 }
 
 .left .attractionImage
@@ -260,4 +281,39 @@ hr
     -webkit-box-shadow: 0 0 6px #AAA;
     -moz-box-shadow: 0 0 6px #AAA;
     margin: 16px;
+}
+
+.w100
+{
+    width: 100%;
+}
+
+.table input[type="text"], .table input[type="password"]
+{
+    width: 360px;
+}
+
+.contactTable td
+{
+    font-size: 21px;
+}
+
+#travel .left
+{
+	font-size: 24px;
+}
+
+ul li
+{
+	list-style-type: circle;
+	margin-left: 18px;
+}
+
+#map
+{
+	background: darkGray;
+	border-radius: .5em;
+	border: 1px solid darkGray;
+	height: 600px;
+    box-shadow: 0 0 6px darkGray;
 }

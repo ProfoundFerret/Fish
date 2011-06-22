@@ -7,6 +7,7 @@ $JS = array();
 $JS[] = 'js/jquery';
 $JS[] = 'js/fish';
 $JS[] = 'js/std';
+$JS[] = 'http://static.addtoany.com/menu/page.js';
 
 $CSS = array();
 $CSS[] = 'css/reset';
@@ -21,6 +22,7 @@ $nav[0]['gallery'] = 'Gallery';
 $nav[0]['attractions'] = 'Nearby Attractions';
 $nav[0]['travel'] = 'Travel';
 $nav[0]['contact'] = 'Contact Us';
+$nav[0]['rates'] = 'Rates';
 
 Util::loadLibrary('Text');
 

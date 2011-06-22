@@ -95,25 +95,22 @@ function array_uncreate($array)
 	}
 }
 
-class FArray
+function array_last_key(& $array)
 {
-	static function lastKey(& $array)
-	{
-		return array_pop(array_keys($array));
-	}
+    return array_pop(array_keys($array));
+}
 
-	static function turn(& $array)
-	{
-		$rt = array();
-	    for ($z = 0;$z < count($array);$z++) 
-	    { 
-		for ($x = 0;$x < count($array[$z]);$x++) 
-		{ 
-		    $rt[$x][$z] = $array[$z][$x]; 
-		} 
-	    }    
-	    
-	    return $rt; 
-	}
+function array_turn(& $array)
+{
+    $rt = array();
+    for ($z = 0;$z < count($array);$z++) 
+    {
+        for ($x = 0;$x < count($array[$z]);$x++) 
+        {
+            $rt[$x][$z] = $array[$z][$x]; 
+        }
+    }
+
+    return $rt; 
 }
 ?>

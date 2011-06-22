@@ -29,6 +29,8 @@
 	<div id="content">{{ Fish::next() }}</div>
 
 	<a href="{{ kSHORT_PREFIX }}admin{{ $adminDirection }}"><div id="footer">{{ kORGANIZATION }} {{ date('Y') }}</div></a>
+
+<script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
 </div>
 </body>
 </html>
