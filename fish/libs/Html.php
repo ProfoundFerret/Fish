@@ -186,6 +186,8 @@ class HTML
 			{
 				$attrs = array();
 				$attrs['value'] = $key;
+				
+				echo $value;
 
 				if ($val == $value)
 				{
