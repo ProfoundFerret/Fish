@@ -17,7 +17,7 @@ $search = "[0-9a-z]+ [0-9a-z]+ $name $email $timestamp$change";
 
 preg_match_all('/' . $search . '/i',$changes,$matches);
 
-$matches = FArray::turn($matches);
+$matches = array_turn($matches);
 
 foreach ($matches as $i => $values)
 {

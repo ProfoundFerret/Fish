@@ -1,9 +1,5 @@
 <?
-$a = 1;
-$b = 2;
-$c = 3;
-swap($a,$b,$c);
+$res = Validator::zip('68521-1234');
 
-echo $a . ' / ' . $b . ' / ' . $c;
+var_dump($res);
 ?>
-

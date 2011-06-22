@@ -8,8 +8,8 @@ class Validator
 		'decimal' => '-?[0-9]*\.[0-9]+',
 		'email' => '[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,6}',
 		'ipv4' => '([0-9]{1,3}.){3}[0-9]{1,3}',
-		'phone' => '(?:\+?1)?[-. ]?\\(?[2-9][0-8][0-9]\\)?[-. ]?[2-9][0-9]{2}[-. ]?[0-9]{4}'
-
+        'phone' => '(?:\+?1)?[-. ]?\\(?[2-9][0-8][0-9]\\)?[-. ]?[2-9][0-9]{2}[-. ]?[0-9]{4}',
+        'zip' => '[0-9]{5}(-?[0-9]+4)?'
 	);
 
 	static function addPattern($name, $regex)
@@ -26,7 +26,12 @@ class Validator
 		if (preg_match($expression, $text)) return $text;
 
 		return false;
-	}
+    }
+
+    static function zip($text)
+    {
+        return self::validate($text, 'zip');
+    }
 
 	static function alphaNumeric($text)
 	{
@@ -135,6 +140,14 @@ class Validator
 		}
 
 		return $return;
-	}
+    }
+
+    static function date($text)
+    {
+        $stamp = strtotime($text);
+        if ($stamp === false) return false;
+
+        return date('Y-m-d', $stamp);
+    }
 }
 ?>

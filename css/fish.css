@@ -87,10 +87,10 @@ a
 
 	border-radius: .2em;
 
-	background: #333;
-	background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#111));
-	background: -moz-linear-gradient(top,  #333,  #111);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#333', endColorstr='#111');
+    background: #333;
+    background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#111));
+    background: -moz-linear-gradient(top,  #333,  #111);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#333', endColorstr='#111');
 
 	float: left;
 
@@ -102,8 +102,6 @@ a
 	transition: all 0.25s ease-in-out;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
-
-
 }
 
 #nav a:hover
