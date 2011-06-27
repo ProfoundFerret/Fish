@@ -75,4 +75,41 @@ $(document).ready(function(){
 	
 	    return false;
 	});
+	
+	$("#BaN a").each(function()
+	{
+		$(this).attr('href','');
+	});
+	
+	$("#BaN").hover(function()
+	{
+		$(this).stop().animate({ backgroundColor: '#dddddd'});
+	}, function ()
+	{
+		$(this).stop().animate({ backgroundColor: '#eeeeee'});
+	});
+		
+	$("#BaN").click(function()
+	{
+		color = $(this).find('a').css('color');
+		
+		replace = function() { $(this).replaceWith('<b>' + $(this).html() + '</b>'); }
+		
+		$(this).find('a').animate({ color: 'black' }, "slow", "swing", replace);
+		
+		$("#BaN tr").fadeIn();
+		$(this).unbind('mouseenter click');
+		
+		return false;
+	});
+	$("#BaN tr").hide();
+	
+	$("#BaN form").submit(function()
+	{
+		data = $(this).serialize();
+	
+		console.log(data);
+		
+		return false;
+	});
 });

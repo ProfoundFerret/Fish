@@ -183,7 +183,6 @@ table.gallery
 {
 	width: 180px;
 	margin-right: 32px;
-	float: left;
 }
 
 .adminImage img
@@ -316,4 +315,34 @@ ul li
 	border: 1px solid darkGray;
 	height: 600px;
     box-shadow: 0 0 6px darkGray;
+}
+
+#BaN
+{
+	background: #eee;
+	
+    box-shadow: 0 0 2px black, inset 0 0 8px #f7f7f7;
+    -webkit-box-shadow: 0 0 2px black, inset 0 0 8px #f7f7f7;
+    -moz-box-shadow: 0 0 2px black, inset 0 0 8px #f7f7f7;
+    
+    padding: 10px 0;
+	margin-bottom: 6px;
+    
+    border-radius: .3em;
+	
+	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+}
+
+#BaN table
+{
+	width: 100%;
+}
+
+#BaN td
+{
+	width: 50%;
+	vertical-align: middle;
+	padding: 4px 4px;
 }

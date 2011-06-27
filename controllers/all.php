@@ -4,9 +4,10 @@ $title = kSITE_NAME;
 $db = new MySQLi('localhost', 'root', '', 'ltd');
 
 $JS = array();
-$JS[] = 'js/jquery';
+$JS[] = 'js/jquery-1.6.min';
 $JS[] = 'js/fish';
 $JS[] = 'js/std';
+$JS[] = 'js/jquery.color.js';
 $JS[] = 'http://static.addtoany.com/menu/page.js';
 
 $CSS = array();
