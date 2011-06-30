@@ -352,11 +352,11 @@ class HTML
 		if ($default === false) $default = date('m');
 
 		$months = array(1 => 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
-		foreach ($months as $i => $name)
+		foreach ($months as $i => $mname)
 		{
 			if ($i < 10)
 			{
-				$months["0$i"] = $name;
+				$months["0$i"] = $mname;
 				unset($months[$i]);
 			}
 		}

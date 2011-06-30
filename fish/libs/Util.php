@@ -91,10 +91,11 @@ class Util
 	}
 }
 
-function array_uncreate($array)
+function array_uncreate($array, $prefix = '')
 {
 	foreach ($array as $var => $val)
 	{
+		$var = $prefix . $var;
 		global $$var;
 		$$var = $val;
 	}
