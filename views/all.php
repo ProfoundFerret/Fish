@@ -8,7 +8,6 @@
 	{{ for $file in $CSS }}
 		{{ HTML::css($file) }}
 	{{ end }}
-
 </head>
 <body>
 <div id="container">
@@ -29,7 +28,9 @@
 
 	<div id="content">{{ Fish::next() }}</div>
 
-	<div id="footer">{{ kORGANIZATION }} {{ date('Y') }}</div>
+	<a href="{{ kSHORT_PREFIX }}admin{{ $adminDirection }}"><div id="footer">{{ kORGANIZATION }} {{ date('Y') }}</div></a>
+
+<script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
 </div>
 </body>
 </html>

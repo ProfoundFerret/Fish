@@ -191,7 +191,7 @@ class HTML
 				{
 					$attrs['selected'] = true;
 				}
-
+				
 				self::open('option',$attrs);
 				echo $val;
 				self::close('option');

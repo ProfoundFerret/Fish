@@ -1,7 +1,7 @@
 <?
 const kTIDY_HTML = false;
-const kPREFIX = '/Library/WebServer/Documents/fish/';
-const kSHORT_PREFIX = '/fish/';
-const kSITE_NAME = 'Fish';
+const kPREFIX = '/Library/WebServer/Documents/ltd/';
+const kSHORT_PREFIX = '/ltd/';
+const kSITE_NAME = 'Living The Dream Bed And Breakfast';
 const kORGANIZATION = 'Kyle Carson';
 ?>

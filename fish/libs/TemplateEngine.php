@@ -67,7 +67,7 @@ class TemplateEngine
 
 		$contents = preg_replace($search, $replace, $contents);
 
-		$contents = self::createFunction('createArray',__CLASS__ . '::createArray',$contents);
+		$contents = self::createFunction('array_create',__CLASS__ . '::createArray',$contents);
 		$contents = self::createFunction('swap',__CLASS__ . '::swap',$contents);
 
 		return $contents;
