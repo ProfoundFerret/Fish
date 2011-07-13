@@ -17,7 +17,7 @@ class Util
 	{
 		$file = $lib . '.php';
 		
-		if (file_exists($file) include $file;
+		if (file_exists($file)) include $file;
 
 		if (file_exists('fish/libs/' . $file)) include 'fish/libs/' . $file;
 		
