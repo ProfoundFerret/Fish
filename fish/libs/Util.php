@@ -15,9 +15,14 @@ class Util
 
 	static function loadLibrary($lib)
 	{
-		$file = 'libs/' . $lib . '.php';
+		$file = $lib . '.php';
+		
+		if (file_exists($file) include $file;
+		
+		$file = "libs/$file";
 
 		if (file_exists('fish/' . $file)) include 'fish/' . $file;
+		
 		if (file_exists($file)) include $file;
 	}
 
@@ -89,6 +94,12 @@ class Util
 	{
 		echo '<script type="text/javascript">alert("' . $text . '");</script>';
 	}
+}
+
+function exists(&$var)
+{
+	if (! isSet($var)) return false;
+	return $var;
 }
 
 function array_uncreate($array, $prefix = '')
