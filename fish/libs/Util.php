@@ -18,12 +18,10 @@ class Util
 		$file = $lib . '.php';
 		
 		if (file_exists($file) include $file;
-		
-		$file = "libs/$file";
 
-		if (file_exists('fish/' . $file)) include 'fish/' . $file;
+		if (file_exists('fish/libs/' . $file)) include 'fish/libs/' . $file;
 		
-		if (file_exists($file)) include $file;
+		if (file_exists('php/' . $file)) include 'php/' . $file;
 	}
 
 	static function get($name, $value = false)
